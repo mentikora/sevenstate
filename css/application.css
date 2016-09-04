@@ -50,6 +50,40 @@ body{
 
 /* all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s */
 
+/* def's */
+.section_title{
+	display: 	inline-block;
+	position: relative;
+	padding-bottom: 15px;
+	margin-top: 150px;
+	margin-bottom: 65px;
+
+	color: #353535;
+	font-size: 42px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 42px;
+  font-family: 'ProximaNovaBold';
+}
+	.section_title:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: #4de084;
+	}
+.aftertitle_text{
+	margin-bottom: 65px;
+
+	font-size: 24px;
+  color: #000000;
+  line-height: 36px;
+  font-family: 'ProximaNovaLight';
+}
+
+
 /*=== main menu ===*/
 #menu{
 	float: right;
@@ -122,4 +156,68 @@ body{
 	}
 	#first .btn{
 		margin-top: 75px;
+	}
+
+/*=== section second ===*/
+#second h3{
+	margin-bottom: 65px;
+
+	font-family: 'ProximaNovaLight';
+	font-weight: 300;
+	font-size: 32px;
+	color: #7F7F7F;
+}
+#second i{
+	color: #4DE084;
+	font-size: 100px;
+}
+#second p{
+	padding: 35px 0px;
+	
+	font-family: 'ProximaNovaReg';
+	color: #4F4F4F;
+	font-size: 18px;
+	font-weight: 400;
+}
+#second .item{
+	margin-bottom: 30px;
+}
+
+/*===  section third ===*/
+#third .section_title{
+	margin-top: 85px;
+}
+.project{}
+	/* project bgs */
+	.project.apc{
+		background: url('images/apc-bg.jpg') no-repeat 50% 0;
+		background-size: cover;
+	}
+	.project.ballistix_igromir{
+		background: url('images/blstx-igrmr-bg.jpg') no-repeat 50% 0;
+		background-size: cover;	
+	}
+	.project.ballistix_gaming{
+		background: url('images/blstx-bg.jpg') no-repeat 50% 0;
+		background-size: cover;	
+	}
+	.project.wot{
+		background: url('images/wg-bg.jpg') no-repeat 50% 0;
+		background-size: cover;	
+	}
+	.project.anox{
+		background: url('images/anox-bg.jpg') no-repeat 50% 0;
+		background-size: cover;	
+	}
+	.project.battlenation{
+		background: url('images/bn-bg.jpg') no-repeat 50% 0;
+		background-size: cover;	
+	}
+	.project.onegame{
+		background: url('images/1g-bg.jpg') no-repeat 50% 0;
+		background-size: cover;	
+	}
+	/* project items */
+	.project header{
+		height: 250px;
 	}
