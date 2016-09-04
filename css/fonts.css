@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'ProximaNovaBlack';
+  src: url('fonts/ProximaNovaBlack.eot');
+  src: url('fonts/ProximaNovaBlack.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaBlack.woff2') format('woff2'),
+       url('fonts/ProximaNovaBlack.woff') format('woff'),
+       url('fonts/ProximaNovaBlack.ttf') format('truetype'),
+       url('fonts/ProximaNovaBlack.svg#ProximaNovaBlack') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('fonts/ProximaNovaBold.eot');
+  src: url('fonts/ProximaNovaBold.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaBold.woff2') format('woff2'),
+       url('fonts/ProximaNovaBold.woff') format('woff'),
+       url('fonts/ProximaNovaBold.ttf') format('truetype'),
+       url('fonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('fonts/ProximaNovaLight.eot');
+  src: url('fonts/ProximaNovaLight.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaLight.woff2') format('woff2'),
+       url('fonts/ProximaNovaLight.woff') format('woff'),
+       url('fonts/ProximaNovaLight.ttf') format('truetype'),
+       url('fonts/ProximaNovaLight.svg#ProximaNovaLight') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaReg';
+  src: url('fonts/ProximaNovaReg.eot');
+  src: url('fonts/ProximaNovaReg.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaReg.woff2') format('woff2'),
+       url('fonts/ProximaNovaReg.woff') format('woff'),
+       url('fonts/ProximaNovaReg.ttf') format('truetype'),
+       url('fonts/ProximaNovaReg.svg#ProximaNovaReg') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url('fonts/ProximaNovaSemibold.eot');
+  src: url('fonts/ProximaNovaSemibold.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaSemibold.woff2') format('woff2'),
+       url('fonts/ProximaNovaSemibold.woff') format('woff'),
+       url('fonts/ProximaNovaSemibold.ttf') format('truetype'),
+       url('fonts/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?x90n4r');
+  src:  url('fonts/icomoon.eot?x90n4r#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?x90n4r') format('truetype'),
+    url('fonts/icomoon.woff?x90n4r') format('woff'),
+    url('fonts/icomoon.svg?x90n4r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-up:before {
+  content: "\e901";
+}
+.icon-camera:before {
+  content: "\e902";
+}
+.icon-console:before {
+  content: "\e903";
+}
+.icon-contacts-email:before {
+  content: "\e904";
+}
+.icon-contacts-message:before {
+  content: "\e905";
+}
+.icon-contacts-name:before {
+  content: "\e906";
+}
+.icon-contacts-phone:before {
+  content: "\e907";
+}
+.icon-design:before {
+  content: "\e908";
+}
+.icon-imac:before {
+  content: "\e909";
+}
+.icon-link:before {
+  content: "\e90a";
+}
+.icon-mail:before {
+  content: "\e90c";
+}
+.icon-mobile:before {
+  content: "\e90d";
+}
+.icon-news-2:before {
+  content: "\e90e";
+}
+.icon-pen-2:before {
+  content: "\e90f";
+}
+.icon-skype:before {
+  content: "\e910";
+}
+.icon-smart-tablet-2:before {
+  content: "\e911";
+}
+.icon-user-group-2:before {
+  content: "\e912";
+}
+
+
+
+
+
