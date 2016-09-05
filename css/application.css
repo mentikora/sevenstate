@@ -44,7 +44,7 @@ body{
 .img-responsive{
 	max-width: 100%;
 	height: auto;
-	display: inline-block;
+	display: block;
 }
 .align-center{ text-align: center; }
 
@@ -82,6 +82,9 @@ body{
   line-height: 36px;
   font-family: 'ProximaNovaLight';
 }
+  .aftertitle_text span{
+    color: #4DE084;
+  }
 
 
 /*=== main menu ===*/
@@ -280,3 +283,71 @@ body{
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
+
+/*=== section four ===*/
+.photodivider{
+  height: 3px;
+  background: #4de084;
+}
+/* employee */
+.employee{}
+  .employee.middle{
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+  .employee h2{
+    font-size: 32px;
+    color: #353535;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-family: 'ProximaNovaBold';
+  }
+  .employee span{
+    color: #4F4F4F;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+    font-family: 'ProximaNovaLight';
+  }
+  .employee p{}
+  .employee img{
+    display: inline-block;
+  }
+
+/*=== section fifth ===*/
+#fifth{
+  min-height: 874px;
+  background-color: #202020;
+}
+  #fifth .aftertitle_text,
+  #fifth .section_title{
+    color: #fff;
+  }
+
+  .contacts_form{
+    color: #fff;
+  }
+
+/* form */
+.form_controller{
+  width: 100%;
+  min-height: 22px;
+  border: 0;
+  outline: 0;
+  
+  padding: 21px 12px 19px 61px;
+  border-radius: 7px;
+
+  color: #999999;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  font-weight: 300;
+
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+
+/*=== footer ===*/
+#footer{
+  text-align: left;
+}
