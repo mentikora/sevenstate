@@ -187,7 +187,9 @@ body{
 #third .section_title{
 	margin-top: 85px;
 }
-.project{}
+.project{
+  width: 100%;
+}
 	/* project bgs */
 	.project.apc{
 		background: url('images/apc-bg.jpg') no-repeat 50% 0;
@@ -255,8 +257,8 @@ body{
     font-weight: 400;
     color: #fff;
 	}
-	.project .container-fluid{
-		padding: 0 50px 50px;
+	.project .content{
+		padding-bottom: 50px;
 		color: #EDEDED;
     font-family: 'ProximaNovaLight';
     font-size: 18px;
@@ -264,3 +266,17 @@ body{
     line-height: 27px;
     text-align: left;
 	}
+
+  .project header div:nth-child(even){
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .project header div:nth-child(odd){
+    
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
