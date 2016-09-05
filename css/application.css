@@ -309,7 +309,13 @@ body{
     line-height: 33px;
     font-family: 'ProximaNovaLight';
   }
-  .employee p{}
+  .employee p{
+    font-size: 18px;
+    color: #000000;
+    line-height: 27px;
+    font-family: 'ProximaNovaReg';
+    font-weight: 300;
+  }
   .employee img{
     display: inline-block;
   }
@@ -331,12 +337,13 @@ body{
 /* form */
 .form_controller{
   width: 100%;
-  min-height: 22px;
+  margin-bottom: 30px;
   border: 0;
   outline: 0;
   
-  padding: 21px 12px 19px 61px;
   border-radius: 7px;
+  padding: 21px 12px 19px 61px;  
+  min-height: 22px;
 
   color: #999999;
   font-family: 'ProximaNovaLight';
@@ -345,9 +352,45 @@ body{
 
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
+  textarea.form_controller{
+    padding-bottom: 5px;
+  }
+  
+form .btn{
+  float: right;
+  background: inherit;
+}
 
 
 /*=== footer ===*/
 #footer{
+  padding: 0 15px;
+
   text-align: left;
+  height: 95px;
+  line-height: 95px;
+  background-color: #181818;
 }
+  #footer .copy{
+    font-family: 'ProximaNovaLight';
+    opacity: .25;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+  }
+  #footer .gotop{
+    opacity: .4;
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  }
+    #footer .gotop:hover{
+      opacity: 1;
+    }
+    #footer .gotop i{
+      font-size: 20px;
+    }    
+
