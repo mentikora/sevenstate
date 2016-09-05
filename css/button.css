@@ -25,6 +25,8 @@
 		background-color: #4DE084;
 		color: #353535;
 	}
+
+	/* project */
 	.btn.circle{
 		padding: 0;
 		width: 57px;
@@ -34,3 +36,12 @@
 		.btn.circle:hover{
 			color: #fff;
 		}
+
+	.btn.disabled{
+		opacity: .5;
+		cursor: default;
+	}
+		.btn.disabled:hover{
+			background: inherit;
+		}
+
