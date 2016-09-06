@@ -105,7 +105,7 @@ body{
   padding: 0 50px;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   z-index: 1000;
   
@@ -117,6 +117,7 @@ body{
 }
   .header_wrapper.fixed{
     position: fixed;
+    top: 0;
     background: rgba(0,0,0, .9);
     animation-name: sticky;
     animation-duration: 0.3s;
@@ -126,8 +127,8 @@ body{
 #menu{
 	float: right;
 }
-
-#menu span{
+#menu span,
+#menu a{
 	font-size: 16px;
   text-transform: uppercase;
   color: #fff;
@@ -145,6 +146,7 @@ body{
   
 }
 	#menu span:hover,
+  #menu a:hover,
   #menu span.active{
 		color: #4DE084;
 	}
@@ -153,8 +155,47 @@ body{
 		margin-left: 50px;
 	}
 
-/*=== first section ===*/
+#menu div{
+  margin-top: 30px;
+  padding-right: 25px;
+  height: 38px;
+  position: relative;
+  cursor: pointer;
 
+  
+}
+  #menu div:hover a{
+    opacity: 1;
+    visibility: visible;
+  }
+  #menu div .arrow{
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    width: 14px;
+    height: 8px;
+    margin-top: -4px;
+  }
+  #menu div a{
+    line-height: 38px;
+    padding-left: 50px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  }
+    #menu div a:first-child{
+      opacity: 1;
+      visibility: visible;
+      border-left: 1px solid rgba(255,255,255, .25);
+    }
+
+/*=== first section ===*/
 #first{
 	height: 700px;
 
