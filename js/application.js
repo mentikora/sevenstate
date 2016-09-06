@@ -28,6 +28,13 @@
     }, 500);
   });
 
+  // discuss scroll to contacts
+  $('.discuss').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('#first').offset().top
+    }, 500);
+  });
+
   // show project info
   $('.project_info_btn').on('click', function(event){
     if ( $(this).hasClass('active')) {
@@ -41,7 +48,7 @@
 
   // menu set active el on scroll
   $(document).on("scroll", onScroll);
-  
+
   function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#menu span').each(function () {

@@ -65,7 +65,7 @@ body{
 .section_title{
 	display: 	inline-block;
 	position: relative;
-	padding-bottom: 15px;
+	padding: 0 15px 15px;
 	margin-top: 150px;
 	margin-bottom: 65px;
 
@@ -87,6 +87,7 @@ body{
 	}
 .aftertitle_text{
 	margin-bottom: 65px;
+  padding: 0 15px;
 
 	font-size: 24px;
   color: #000000;
@@ -126,6 +127,7 @@ body{
 /*=== main menu ===*/
 #menu{
 	float: right;
+  display: none;
 }
 #menu span,
 #menu a{
@@ -258,6 +260,7 @@ body{
 	font-family: 'ProximaNovaLight';
 	font-weight: 300;
 	font-size: 32px;
+  line-height: 32px;
 	color: #7F7F7F;
 }
 #second i{
@@ -277,43 +280,50 @@ body{
 }
 
 /*===  section third ===*/
+.projects_wrapper{
+  background-color: #000;
+}
 .project{
   width: 100%;
+  /*opacity: .7;*/
 
-  -webkit-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  -moz-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  -ms-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  -o-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
+  .project:hover{
+    opacity: 1;
+  }
 	/* project bgs */
 	.project.apc{
 		background: url('images/apc-bg.jpg') no-repeat 50% 0;
-		background-size: cover;
+		/*background-size: cover;*/
 	}
 	.project.ballistix_igromir{
 		background: url('images/blstx-igrmr-bg.jpg') no-repeat 50% 0;
-		background-size: cover;	
+		/*background-size: cover;	*/
 	}
 	.project.ballistix_gaming{
 		background: url('images/blstx-bg.jpg') no-repeat 50% 0;
-		background-size: cover;	
+		/*background-size: cover;	*/
 	}
 	.project.wot{
 		background: url('images/wg-bg.jpg') no-repeat 50% 0;
-		background-size: cover;	
+		/*background-size: cover;	*/
 	}
 	.project.anox{
 		background: url('images/anox-bg.jpg') no-repeat 50% 0;
-		background-size: cover;	
+		/*background-size: cover;	*/
 	}
 	.project.battlenation{
 		background: url('images/bn-bg.jpg') no-repeat 50% 0;
-		background-size: cover;	
+		/*background-size: cover;	*/
 	}
 	.project.onegame{
 		background: url('images/1g-bg.jpg') no-repeat 50% 0;
-		background-size: cover;	
+		/*background-size: cover;	*/
 	}
 	/* project items */
 	.project header{
@@ -377,6 +387,14 @@ body{
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+  }
+  @media(max-width: 991px){
+    .project header{
+      flex-direction: column;
+    }
+    .project .col-md-6{
+      margin-top: 25px;
+    }
   }
 
 /*=== section four ===*/
@@ -446,6 +464,11 @@ body{
   .contacts_form{
     color: #fff;
   }
+  @media(max-width: 991px){
+    #fifth{
+      padding-bottom: 30px;
+    }
+  }
 
 /* form */
 .form_controller{
@@ -458,7 +481,8 @@ body{
   padding: 21px 12px 19px 61px;  
   min-height: 22px;
 
-  color: #999999;
+  color: #353535;
+
   font-family: 'ProximaNovaLight';
   font-size: 18px;
   font-weight: 300;
