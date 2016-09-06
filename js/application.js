@@ -64,5 +64,11 @@
     });
   }
 
+  //employee fake_line position
+  $(window).on("load resize",function(e){
+    $('.fake_line').css('bottom', $('.employee.middle').outerHeight() + 'px');
+  });
+  
+
 
 })();

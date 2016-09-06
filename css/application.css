@@ -398,20 +398,29 @@ body{
   }
 
 /*=== section four ===*/
-.photodivider{
+#four{
+  position: relative;
+}
+.fake_line{
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
   height: 3px;
   background: #4de084;
 }
 /* employee */
 .employee{
-  padding-bottom: 65px;
+  padding: 0 15px 65px;
+  position: relative;
 }
   .employee.middle{
     border-left: 1px solid #e7e7e7;
     border-right: 1px solid #e7e7e7;
   }
+    
   .employee h2{
-    margin-top: 25px;
+    padding-top: 25px;
 
     font-size: 32px;
     color: #353535;
@@ -450,6 +459,25 @@ body{
     display: inline-block;
     margin: 0 10px;
   }
+
+@media(max-width: 991px){
+  .profile_img{
+    margin: 0 auto;
+    position: relative;
+  }
+  .employee:before{
+    content: '';
+    height: 3px;
+    background: #4de084;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .employee.middle{
+    border: 0;
+  }
+}
 
 /*=== section fifth ===*/
 #fifth{
