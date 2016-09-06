@@ -236,11 +236,14 @@ body{
 }
 
 /*===  section third ===*/
-/*#third .section_title{
-	margin-top: 85px;
-}*/
 .project{
   width: 100%;
+
+  -webkit-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -moz-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -ms-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: background 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 	/* project bgs */
 	.project.apc{
