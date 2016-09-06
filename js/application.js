@@ -31,7 +31,7 @@
   // discuss scroll to contacts
   $('.discuss').on('click', function(){
     $('html, body').animate({
-      scrollTop: $('#first').offset().top
+      scrollTop: $('#fifth').offset().top
     }, 500);
   });
 
@@ -52,21 +52,32 @@
   function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#menu span').each(function () {
-        var curr = $(this);
-        var refElement = $(curr.data("scroll"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu span').removeClass("active");
-            curr.addClass("active");
-        }
-        else{
-            curr.removeClass("active");
-        }
+      var curr = $(this);
+      var refElement = $(curr.data("scroll"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('#menu span').removeClass("active");
+        curr.addClass("active");
+      }
+      else{
+        curr.removeClass("active");
+      }
     });
   }
 
-  //employee fake_line position
+  // employee fake_line position
   $(window).on("load resize",function(e){
     $('.fake_line').css('bottom', $('.employee.middle').outerHeight() + 'px');
+  });
+
+  // show menu on mobile
+  $('.mobile_toggle_btn').on('click', function(){
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $('#menu').slideUp();
+    } else{
+      $(this).addClass('open');
+      $('#menu').slideDown();
+    }
   });
   
 
