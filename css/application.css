@@ -101,7 +101,16 @@ body{
   .aftertitle_text span{
     color: #4DE084;
   }
-
+@media(max-width: 767px){
+  .section_title{
+    letter-spacing: 2px;
+    font-size: 35px;
+  }
+  .aftertitle_text{
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 /* header wrapper */
 .header_wrapper{
   height: 100px;
@@ -314,7 +323,15 @@ body{
 	#first .btn{
 		margin-top: 75px;
 	}
-
+  @media(max-width: 767px){
+    #first h1{
+      letter-spacing: 2px;
+      font-size: 40px;
+    }
+    #first h2{
+      line-height: 32px;
+    }
+  }
 /*=== section second ===*/
 #second h3{
 	margin-bottom: 65px;
@@ -615,7 +632,7 @@ form .btn{
   padding: 0 15px;
 
   text-align: left;
-  height: 95px;
+  min-height: 95px;
   line-height: 95px;
   background-color: #181818;
 }
@@ -641,4 +658,17 @@ form .btn{
     #footer .gotop i{
       font-size: 20px;
     }    
-
+  @media(max-width: 767px){
+    #footer{
+      text-align: center;
+      line-height: 50px;
+    }
+    #footer .copy{
+      margin-top: 15px;
+      line-height: 25px;
+    }
+    #footer .copy,
+    #footer .gotop{
+      float: none !important;
+    }
+  }
