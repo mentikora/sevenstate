@@ -351,9 +351,30 @@ body{
   font-weight: 300;
 
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+
+  opacity: .9;
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
 }
+  .form_controller:hover,
+  .form_controller:focus{
+    opacity: 1;
+  }
+  .form_controller.name{
+    background-image: url('images/contacts-name.svg');
+  }
+  .form_controller.mail{
+    background-image: url('images/contacts-email.svg');
+  }
+  .form_controller.phone{
+    background-image: url('images/contacts-phone.svg');
+  }
+  .form_controller.message{
+    background-image: url('images/contacts-message.svg');
+  }
   textarea.form_controller{
     padding-bottom: 5px;
+    background-position: 20px 20px;
   }
   
 form .btn{
