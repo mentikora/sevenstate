@@ -290,12 +290,16 @@ body{
   background: #4de084;
 }
 /* employee */
-.employee{}
+.employee{
+  padding-bottom: 65px;
+}
   .employee.middle{
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
   }
   .employee h2{
+    margin-top: 25px;
+
     font-size: 32px;
     color: #353535;
     text-transform: uppercase;
@@ -303,21 +307,35 @@ body{
     font-family: 'ProximaNovaBold';
   }
   .employee span{
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 15px;
+
     color: #4F4F4F;
     font-size: 22px;
     font-weight: 300;
     line-height: 33px;
     font-family: 'ProximaNovaLight';
+
   }
   .employee p{
+    margin-bottom: 25px;
+
     font-size: 18px;
     color: #000000;
     line-height: 27px;
-    font-family: 'ProximaNovaReg';
+    font-family: 'ProximaNovaLight';
     font-weight: 300;
+  }
+  .employee div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .employee img{
     display: inline-block;
+    margin: 0 10px;
   }
 
 /*=== section fifth ===*/
