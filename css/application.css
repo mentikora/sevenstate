@@ -36,6 +36,17 @@ table {
 	border-spacing: 0;
 }
 
+
+/* animation */
+@keyframes sticky {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
 /* body */
 body{
 	font-size: 14px;
@@ -86,14 +97,37 @@ body{
     color: #4DE084;
   }
 
+/* header wrapper */
+
+.header_wrapper{
+  height: 100px;
+  line-height: 100px;
+  padding: 0 50px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+  .header_wrapper.fixed{
+    position: fixed;
+    background: rgba(0,0,0, .9);
+    animation-name: sticky;
+    animation-duration: 0.3s;
+  }
 
 /*=== main menu ===*/
 #menu{
 	float: right;
-	margin-top: 23px;
 }
 
-#menu a{
+#menu span{
 	font-size: 16px;
   text-transform: uppercase;
   color: #fff;
@@ -101,6 +135,7 @@ body{
   font-weight: 600;
   line-height: 19px;
   text-decoration: none;
+  cursor: pointer;
 
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
@@ -109,7 +144,8 @@ body{
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   
 }
-	#menu a:hover{
+	#menu span:hover,
+  #menu span.active{
 		color: #4DE084;
 	}
 	#menu li{
@@ -118,34 +154,47 @@ body{
 	}
 
 /*=== first section ===*/
+
 #first{
 	height: 700px;
-	padding-bottom: 200px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 40px;
 
 	background: url('images/header-bg.jpg') no-repeat 50% 0;
 	background-attachment: fixed;
 	
 	background-size: cover;
 }
-	#first .clearfix{
-		width: 100%;
-	}
+  #first .align-center{
+    display: flex;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 	#first .logo{
 		display: block;
 		width: 80px;
 		float: left;
+    margin-top: 20px;
 	}
+  #first .logo_text{
+    float: left;
+    display: none;
+    margin-left: 15px;
+
+    color: #4DE084;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'ProximaNovaSemiBold';
+
+    
+  }
 	#first h1,
 	#first h2{
 		text-transform: uppercase;
     line-height: 72px;
 	}
 	#first h1{
-		margin-top: 160px;
-
 		font-family: 'ProximaNovaBold';
 		color: #4DE084;
 		font-size: 72px;
@@ -187,9 +236,9 @@ body{
 }
 
 /*===  section third ===*/
-#third .section_title{
+/*#third .section_title{
 	margin-top: 85px;
-}
+}*/
 .project{
   width: 100%;
 }
@@ -262,6 +311,8 @@ body{
 	}
 	.project .content{
 		padding-bottom: 50px;
+    display: none;
+
 		color: #EDEDED;
     font-family: 'ProximaNovaLight';
     font-size: 18px;
@@ -290,12 +341,16 @@ body{
   background: #4de084;
 }
 /* employee */
-.employee{}
+.employee{
+  padding-bottom: 65px;
+}
   .employee.middle{
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
   }
   .employee h2{
+    margin-top: 25px;
+
     font-size: 32px;
     color: #353535;
     text-transform: uppercase;
@@ -303,21 +358,35 @@ body{
     font-family: 'ProximaNovaBold';
   }
   .employee span{
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 15px;
+
     color: #4F4F4F;
     font-size: 22px;
     font-weight: 300;
     line-height: 33px;
     font-family: 'ProximaNovaLight';
+
   }
   .employee p{
+    margin-bottom: 25px;
+
     font-size: 18px;
     color: #000000;
     line-height: 27px;
-    font-family: 'ProximaNovaReg';
+    font-family: 'ProximaNovaLight';
     font-weight: 300;
+  }
+  .employee div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .employee img{
     display: inline-block;
+    margin: 0 10px;
   }
 
 /*=== section fifth ===*/
@@ -351,9 +420,30 @@ body{
   font-weight: 300;
 
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+
+  opacity: .9;
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
 }
+  .form_controller:hover,
+  .form_controller:focus{
+    opacity: 1;
+  }
+  .form_controller.name{
+    background-image: url('images/contacts-name.svg');
+  }
+  .form_controller.mail{
+    background-image: url('images/contacts-email.svg');
+  }
+  .form_controller.phone{
+    background-image: url('images/contacts-phone.svg');
+  }
+  .form_controller.message{
+    background-image: url('images/contacts-message.svg');
+  }
   textarea.form_controller{
     padding-bottom: 5px;
+    background-position: 20px 20px;
   }
   
 form .btn{

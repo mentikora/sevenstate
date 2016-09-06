@@ -21,7 +21,8 @@
 	-o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
-	.btn:hover{
+	.btn:hover,
+	.btn.active{
 		background-color: #4DE084;
 		color: #353535;
 	}
