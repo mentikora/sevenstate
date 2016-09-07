@@ -300,8 +300,6 @@ body{
     text-transform: uppercase;
     font-size: 20px;
     font-family: 'ProximaNovaSemiBold';
-
-    
   }
 	#first h1,
 	#first h2{
@@ -323,6 +321,11 @@ body{
 	#first .btn{
 		margin-top: 75px;
 	}
+  @media(max-width: 991px){
+    .logo_text{
+      display: none;
+    }
+  }
   @media(max-width: 767px){
     #first h1{
       letter-spacing: 2px;
