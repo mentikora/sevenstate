@@ -146,6 +146,15 @@ body{
     }
   }
 
+/* mobile lang */
+.mobile_lang{
+  float: right;
+  margin-right: 55px;
+}
+  .mobile_lang a:first-child{
+    margin-right: 15px;
+  }
+
 /* mobile_toggle_btn */
 .mobile_toggle_btn{
   display: none;
@@ -190,7 +199,8 @@ body{
 	float: right;
 }
 #menu span,
-#menu a{
+#menu a,
+.mobile_lang a{
 	font-size: 16px;
   text-transform: uppercase;
   color: #fff;
@@ -209,7 +219,8 @@ body{
 }
 	#menu span:hover,
   #menu a:hover,
-  #menu span.active{
+  #menu span.active,
+  .mobile_lang a:hover{
 		color: #4DE084;
 	}
 	#menu li{
@@ -223,8 +234,6 @@ body{
   height: 38px;
   position: relative;
   cursor: pointer;
-
-  
 }
   #menu div:hover a{
     opacity: 1;
@@ -323,7 +332,7 @@ body{
 	}
   @media(max-width: 991px){
     .logo_text{
-      display: none;
+      display: none !important;
     }
   }
   @media(max-width: 767px){
