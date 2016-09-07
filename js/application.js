@@ -4,12 +4,12 @@
 
   // transform menu on scroll
   $(window).on('scroll', function(){
-    if ($(window).scrollTop() > 120) {
+    if ($(window).scrollTop() > 90) {
       $('.header_wrapper').addClass('fixed');
-      $('.logo_text').fadeIn();
+      $('.logo_text').css('display', 'block');
     } else {
       $('.header_wrapper').removeClass('fixed');
-      $('.logo_text').fadeOut();
+      $('.logo_text').css('display', 'none');
     }
   });
 
