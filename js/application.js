@@ -4,7 +4,7 @@
 
   // transform menu on scroll
   $(window).on('scroll', function(){
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 120) {
       $('.header_wrapper').addClass('fixed');
       $('.logo_text').fadeIn();
     } else {
@@ -80,6 +80,7 @@
     }
   });
   
-
+  // wow animation
+  new WOW().init();
 
 })();
