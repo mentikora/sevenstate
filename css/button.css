@@ -40,9 +40,7 @@
 			top: 3px;
 			left: 0;
 		}
-		.btn.circle:hover{
-			color: #000;
-		}
+		.btn.circle:hover{ color: #000; }
 
 	.btn.disabled{
 		opacity: .5;
@@ -52,4 +50,19 @@
 			background: inherit;
 			color: #fff;
 		}
+	
+	.btn.discuss{
+		margin-top: 50px;
+		padding: 0 35px;
+	}
+	@media(max-width: 375px){
+		.btn.discuss{
+			padding: 0 30px;
+		}
+	}
 
+	.btn.project_info_btn{ width: 140px; }
+	@media(max-width: 991px){
+		.btn.project_info_btn{ display: none; }
+		.btn.circle{ margin: 0; }
+	}
