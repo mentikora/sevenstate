@@ -80,11 +80,11 @@
     }
 
     // show project info mobile
-    if (window.matchMedia("(max-width: 991px)").matches) {
-      $('.project .content, .project').addClass('open');
-    } else{
-      $('.project .content, .project').removeClass('open');
-    }
+    // if (window.matchMedia("(max-width: 991px)").matches) {
+    //   $('.project .content, .project').addClass('open');
+    // } else{
+    //   $('.project .content, .project').removeClass('open');
+    // }
   });
 
   // show menu on mobile

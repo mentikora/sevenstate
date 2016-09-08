@@ -62,7 +62,3 @@
 	}
 
 	.btn.project_info_btn{ width: 140px; }
-	@media(max-width: 991px){
-		.btn.project_info_btn{ display: none; }
-		.btn.circle{ margin: 0; }
-	}
