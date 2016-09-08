@@ -17,8 +17,8 @@
   $('#menu span').on('click', function(){
     var data = $(this).data('scroll');
     $('html, body').animate({
-      scrollTop: $(data).offset().top
-    }, 500);
+      scrollTop: $(data).offset().top + 1
+    }, 800);
   });
 
   //footer scroll top
