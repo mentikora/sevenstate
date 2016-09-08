@@ -387,6 +387,16 @@ body{
   line-height: 32px;
 	color: #7F7F7F;
 }
+  #second .bordered:before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    width: 1px;
+    background: #E7E7E7;
+  }
 #second i{
 	color: #4DE084;
 	font-size: 100px;
@@ -402,7 +412,11 @@ body{
 #second .item{
 	margin-bottom: 30px;
 }
-
+@media(max-width: 991px){
+  #second .bordered:before{
+    display: none;
+  }
+}
 @media(max-width: 414px){
   #second i{ font-size: 90px; }
 }
@@ -829,4 +843,32 @@ form .btn{
   and (max-device-width : 736px) 
   and (orientation : landscape) { 
     #first .logo_text{ display: block !important; }
+  }
+
+  /* iphone 6 */
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : portrait) {
+    #menu span, 
+    #menu a, 
+    .mobile_lang a{ font-size: 20px; }
+  }
+
+  /* iphone 5*/
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 568px) 
+  and (orientation : portrait) { 
+    .header_wrapper{
+      height: 75px;
+      line-height: 75px;
+    }
+    #first .logo{
+      width: 60px;
+    }
+    #menu span, 
+    #menu a, 
+    .mobile_lang a{ font-size: 16px; }
+    .mobile_toggle_btn{ top: 24px; }
   }
