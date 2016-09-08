@@ -25,14 +25,14 @@
   $('.gotop').on('click', function(){
     $('html, body').animate({
       scrollTop: $('#first').offset().top
-    }, 500);
+    }, 1500);
   });
 
   // discuss scroll to contacts
   $('.discuss').on('click', function(){
     $('html, body').animate({
       scrollTop: $('#fifth').offset().top
-    }, 500);
+    }, 1500);
   });
 
   // show project info
