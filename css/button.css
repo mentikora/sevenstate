@@ -60,5 +60,11 @@
 			padding: 0 30px;
 		}
 	}
-
-	.btn.project_info_btn{ width: 140px; }
+	
+	.btn.project_info_btn{
+		width: 160px; 
+	}
+	.btn.project_info_btn,
+	.btn.send_message{ 
+		padding: 0 35px;
+	}
